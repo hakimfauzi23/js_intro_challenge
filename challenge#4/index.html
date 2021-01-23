@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let thnAwal = 2000
+        let thnAkhir = 2020
+
+        document.write("Tahun Awal = " + thnAwal + "<br>")
+        document.write("Tahun Akhir = " + thnAkhir + "<br><br>")
+        document.write("Tahun Kabisat  : <br>")
+
+
+        for (let i = thnAwal; i <= thnAkhir; i++) {
+            if (i % 400 === 0 || i % 4 === 0) {
+                document.write(i + "</br>")
+            } 
+        }
+
+    </script>
+
+</body>
+
+</html>
