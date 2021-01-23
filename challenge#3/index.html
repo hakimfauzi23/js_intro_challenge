@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge</title>
+</head>
+
+<body>
+    <script>
+        const numbers = [-6, -4, 0, 1, 2, 2, 3, 10, 12, 44, 52, 72, 98]
+
+        //Average
+        const sum = numbers.reduce((a, b) => a + b, 0);
+        const average = sum / numbers.length
+
+
+        //Max
+        const max = Math.max.apply(null, numbers)
+
+        //Min
+        const min = Math.min.apply(null, numbers)
+
+        //Median
+        function median(numbers) {
+            let median = 0
+            let panjangArr = numbers.length
+
+            let urut = numbers.sort((a, b) => a - b);
+
+
+
+            if (panjangArr % 2 === 0) {
+                median = (numbers[(panjangArr / 2) - 1] + numbers[panjangArr / 2] / 2)
+            } else {
+                median = numbers[((panjangArr - 1) / 2)]
+            }
+
+            return median
+        }
+
+        document.write("Deret Angka :    " + numbers + "</br>")
+        document.write("Average :    " + average + "</br>")
+        document.write("Max :    " + max + "</br>")
+        document.write("Min :    " + min + "</br>")
+        document.write("Median :    " + median(numbers) + "</br>")
+
+
+    </script>
+</body>
+
+</html>
