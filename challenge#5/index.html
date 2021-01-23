@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const kalimat = prompt('Masukan Kalimat : ')
+
+        //Ubah Kalimat(String) menjadi Array
+        const arrayKalimat = kalimat.split('')
+
+        //Balik urutan array 
+        const revKalimat = arrayKalimat.reverse()
+
+        //Ubah array yang telah dibalik menjadi String Lagi
+        const stringRev = revKalimat.join('')
+
+        if (kalimat.toLowerCase() == stringRev.toLowerCase()) {
+            document.write("`" + kalimat + "`" + " MERUPAKAN Palindrom!! ");
+        }
+        else {
+            document.write("`" + kalimat + "`" + " BUKAN Palindrom!! ");
+        }
+
+    </script>
+</body>
+
+</html>
