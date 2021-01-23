@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 1</title>
+</head>
+
+<body>
+    <script>
+
+        let nilai = prompt("Masukan Nilai     : ");
+        let akreditasi = null
+
+        if (nilai >= 90) {
+            akreditasi = "A";
+        }
+        else if (nilai >= 80 && nilai <= 89) {
+            akreditasi = "B";
+        }
+
+        else if (nilai >= 70 && nilai <= 79) {
+            akreditasi = "C";
+        }
+        else if (nilai >= 60 && nilai <= 69) {
+            akreditasi = "D";
+        }
+        else {
+            akreditasi = "E";
+        }
+        document.write("    NILAI = " + nilai + " Akreditasi =  " + akreditasi);
+    </script>
+</body>
+
+</html>
