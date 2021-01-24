@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        //Sorting dengan bubble sort
+        function bubbleSort(numArray) {
+            let arrLength = numArray.length;
+            let swapped;
+            do {
+                swapped = false;
+                for (let i = 0; i < arrLength; i++) {
+                    if (numArray[i] > numArray[i + 1]) {
+                        let tmp = numArray[i];
+                        numArray[i] = numArray[i + 1];
+                        numArray[i + 1] = tmp;
+                        swapped = true;
+                    }
+                }
+            } while (swapped);
+            return numArray;
+        };
+
+        let numbers = [3, 52, 103, -6, 10, 0, 3, 1, -4, 40, 71]
+
+        document.write(" Deret angka sebelum di urutkan = " + "&nbsp" + numbers + "<br>")
+        document.write(" Deret angka setelah di urutkan = " + bubbleSort(numbers))
+
+    </script>
+</body>
+
+</html>
