@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //Input String
+        const kalimat = prompt('Masukan Kalimat : ')
+
+        //Fungsi konversi string ke array
+        string_to_array = function (str) {
+            return str.trim().split(" ");
+        };
+        const arrKalimat = string_to_array(kalimat)
+
+        //Balik Urutan Array
+        const revKalimat = arrKalimat.reverse()
+
+        console.log(kalimat)
+        console.log(revKalimat)
+
+        document.write("Kalimat Asli = " + kalimat + "<br>")
+
+        document.write("Kalimat setelah dibalik = ")
+        for (i = 0; i < revKalimat.length; i++) {
+            document.write(revKalimat[i] + "  ")
+        }
+    </script>
+</body>
+
+</html>
