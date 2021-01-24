@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let choice = prompt("1. Konversi Jam ke Hari ; 2. Konversi Menit ke Jam ; 3. Konversi Detik ke Menit; Masukan Angka Pilihan :");
+        switch (choice) {
+            case "1":
+                let jam = prompt("Masukan Jam ");
+                var convert = jam / 24
+                document.write(jam + " Jam adalah " + convert.toFixed(1) + " Hari")
+                break;
+            case "2":
+                let menit = prompt("Masukan Menit ");
+                var convert = menit / 60
+                document.write(menit + " Menit adalah " + convert.toFixed(1) + " Jam")
+                break;
+            case "3":
+                let detik = prompt("Masukan Detik ");
+                var convert = detik / 60
+                document.write(detik + " Detik adalah " + convert.toFixed(1) + " Menit")
+                break;
+            default:
+                const text = "Masukan Pilihan Dengan Benar Dong!";
+                document.write(text)
+                break;
+        }
+
+    </script>
+</body>
+
+</html>
